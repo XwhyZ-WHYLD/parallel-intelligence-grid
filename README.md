@@ -1,4 +1,4 @@
-# parallel-intelligence-grid
+# Parallel Intelligence Grid
 Architecture for resilient, governed, and regenerative intelligence under uncertainty.
 
 # Parallel Intelligence Grid (PIG)
