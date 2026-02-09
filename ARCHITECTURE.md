@@ -26,3 +26,12 @@
 - Not AGI
 - Not autonomous agents
 - Not a product
+
+### Adaptive Resilience & Compensation (ARC)
+
+ARC is the truth-integrity and degradation control layer of PIG.
+It ensures that weak, noisy, or partial signal does not result in hallucination,
+unsafe amplification, or confidence inflation.
+
+ARC enforces evidence-bound output, deterministic degradation behavior,
+and abstention when signal quality falls below enforceable thresholds.
