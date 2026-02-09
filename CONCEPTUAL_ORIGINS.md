@@ -1,265 +1,265 @@
-
 # Conceptual Origins of the Parallel Intelligence Grid (PIG)
 
-PIG is not derived from a single discipline.
+This document records the **conceptual inspirations** that informed the design
+of the Parallel Intelligence Grid (PIG).
 
-It is the result of **cross-domain pattern convergence** across:
-- distributed systems
-- biological survival mechanisms
-- regenerative biology
-- immune control theory
-- extreme-environment organisms
+These influences are **not metaphors**, nor are they claims of biological or
+physical equivalence. They are **structural analogies** used to reason about
+resilience, failure, recovery, and truth preservation in intelligent systems.
 
-These inspirations are not metaphors.
-They are **constraint solvers** for real failure modes in intelligence systems.
-
-This document records the *why* behind PIG’s design choices.
+Where an idea is inspirational only, it is stated as such.
+Where an idea is engineered, it is formalized elsewhere in this repository.
 
 ---
 
-## Concept Group 1 — Distributed Presence Without Central Dependence
+## Design Philosophy
 
-### Smart Dust
-**What it is:**  
-Microscopic sensor networks operating at massive scale with minimal individual capability.
+PIG is built on a single guiding assumption:
 
-**Core insight:**  
-> Intelligence does not need powerful nodes — it needs *many survivable ones*.
+> Failure is normal. Collapse is optional.
 
-**PIG Mapping:**
-- PIG Intelligence Nodes
-- No single node authority
-- Acceptable loss of individual agents
-- Intelligence emerges from coordination, not dominance
+Most intelligent systems optimize for performance under ideal conditions.
+PIG optimizes for **continuity under degraded reality**.
 
-**Design Outcome:**  
-PIG assumes node loss as normal, not exceptional.
+To do this, the architecture draws selectively from domains that have already
+solved survival under uncertainty.
 
 ---
 
-### Piezoelectric Energy Harvesting (Footstep Power)
-**What it is:**  
-Converting ambient mechanical energy into usable power.
+## 1. Distributed Sensing & Mesh Intelligence
 
-**Core insight:**  
-> Systems should extract value from background noise, not require pristine conditions.
+### Smart Dust (Conceptual Inspiration)
 
-**PIG Mapping:**
-- Event-driven activation
-- Latent intelligence states
-- No always-on requirement
+**What it is (real-world):**
+Microscopic or near-microscopic sensor networks that operate without central
+control, relying on local sensing, redundancy, and probabilistic aggregation.
 
-**Design Outcome:**  
-PIG intelligence is **activated by stimulus**, not continuously consuming resources.
+**What PIG takes from it:**
+- Intelligence does not require a single vantage point
+- Local signals can be weak but still meaningful
+- Global truth emerges from constrained aggregation, not authority
 
----
+**Where it appears in PIG:**
+- Multi-node reasoning
+- Quality Weighted Consensus (QWC)
+- Local truth domains under partition
 
-### Mesh Networking (including Bluetooth Mesh)
-**What it is:**  
-Decentralized, hop-by-hop communication without central infrastructure.
-
-**Core insight:**  
-> Coordination without coordination authority.
-
-**PIG Mapping:**
-- Near-offline operation
-- CRDT-style shared memory
-- Local consensus before escalation
-
-**Design Outcome:**  
-PIG does not assume reliable connectivity or global synchronization.
+> PIG does not assume any node sees “the truth.”
+> It assumes truth survives through constraint and corroboration.
 
 ---
 
-## Concept Group 2 — Bioelectrogenesis & Synchronized Potential
+## 2. Energy from Weak Signals
 
-### Electric Eel (Electrogenesis via Electrocytes)
-**What it is:**  
-Biological generation of synchronized electrical discharge across distributed cells.
+### Piezoelectric Energy Harvesting (Conceptual Inspiration)
 
-**Core insight:**  
-> Latent potential stored locally, released only when synchronized.
+**What it is (real-world):**
+Conversion of small mechanical disturbances (footsteps, vibration)
+into usable electrical energy.
 
-**PIG Mapping:**
-- SPA (Synchronized Potential Architecture)
-- SPARC activation gates
-- Micro-inference bursts
+**What PIG takes from it:**
+- Weak signals are not useless
+- Amplification must respect physical limits
+- Noise amplification is destructive
 
-**Design Outcome:**  
-PIG avoids continuous inference.  
-It prefers **coordinated bursts of cognition**.
+**Where it appears in PIG:**
+- Adaptive Gain Control (ARC)
+- Signal Quality Index (SQI)
+- Confidence attenuation under uncertainty
 
----
-
-## Concept Group 3 — Epimorphic Regeneration (Axolotl Biology)
-
-### Real Biological Process
-1. **Dedifferentiation** — cells lose specialization  
-2. **Blastema formation** — temporary coordination hub  
-3. **Redifferentiation** — correct roles restored  
-4. **Scar suppression** — prevents permanent damage  
-
-**Core insight:**  
-> Failure is loss of specialization, not loss of capability.
-
-**PIG Mapping:**
-- EPR (Epimorphic Prompt Regeneration)
-- Role reset instead of retraining
-- Temporary coordination clusters
-- No global resets
-
-**Design Outcome:**  
-PIG regenerates *roles*, not intelligence.
+> ARC amplifies **signal**, never **certainty**.
 
 ---
 
-## Concept Group 4 — Self-Healing Materials (Hydrogels)
+## 3. Mesh Networking & Partition Survival
 
-### Reversible Supramolecular Bonding
-**What it is:**  
-Materials that heal by re-forming bonds without replacing structure.
+### Decentralized Mesh Networks
 
-**Core insight:**  
-> Repair should preserve identity, not rebuild from scratch.
+**What it is (real-world):**
+Peer-to-peer communication systems that function without centralized
+infrastructure, tolerating partial connectivity and node loss.
 
-**PIG Mapping:**
-- Bounded regeneration budgets
-- Local repair over systemic restart
-- Reversible recovery actions
-
-**Design Outcome:**  
-PIG prevents destructive “fixes” that erase system memory.
-
----
-
-## Concept Group 5 — Human Immune System (Control, Not Defense)
-
-### Key Insight
-> The immune system is not a wall.  
-> It is a **living control system**.
-
----
-
-### 1. Innate Immunity — Fast, Deterministic
-**Traits:**
-- Immediate response
-- High false positives
-- No learning
-
-**PIG Mapping:**
-- Boundary Filter Layer
-- Fast Guard & Throttle
-- Circuit breakers
-
----
-
-### 2. Adaptive Immunity — Learned & Contextual
-**Traits:**
-- Memory
-- Personalization
-- Probabilistic response
-
-**PIG Mapping:**
-- Threat signatures
-- Evidence-based escalation
-- Learned filters (non-authoritative)
-
----
-
-### 3. Tolerance — Preventing Autoimmune Failure
-**Traits:**
-- Decides what *not* to attack
-- Suppresses overreaction
-
-**PIG Mapping:**
-- Non-dominance rules
-- Trusted agents
-- Silence as a valid outcome
-
----
-
-### 4. Distributed Memory Without Central Control
-**Traits:**
+**What PIG takes from it:**
 - No single point of failure
-- Long-lived memory
+- Local autonomy under disconnection
+- Eventual reintegration without global reset
 
-**PIG Mapping:**
-- Distributed threat memory
-- CRDT synchronization
-- Local persistence
+**Where it appears in PIG:**
+- TUNSYNC (Temporal & Network Synchronization)
+- Local-only operation modes
+- Deterministic degradation behavior
+
+> Partition is treated as a state, not an error.
 
 ---
 
-### 5. Escalation Control
-**Traits:**
-- Budgeted response
-- Feedback loops
-- Shutdown protocols
+## 4. Biological Electrogenesis
 
-**PIG Mapping:**
+### Eel Bioelectrogenesis (Inspirational Analogy)
+
+**What it is (real-world):**
+Certain organisms generate usable electrical output from coordinated,
+low-level biological activity.
+
+**What PIG takes from it:**
+- Coordination can create force without central control
+- Output strength is a function of alignment, not power
+- Timing and synchronization matter more than raw capacity
+
+**Where it appears in PIG:**
+- Consensus weighting
+- Coordinated execution gating
+- Synchronization-sensitive amplification
+
+This influence is **conceptual only**.
+
+---
+
+## 5. Epimorphic Regeneration
+
+### Axolotl Regeneration (Structural Inspiration)
+
+**What it is (real-world biology):**
+A regeneration process involving:
+1. Dedifferentiation
+2. Blastema formation
+3. Redifferentiation
+4. Scar suppression
+
+**What PIG takes from it (formally engineered):**
+- Loss of specialization ≠ loss of capability
+- Recovery is a process, not a reset
+- Temporary coordination hubs are safer than permanent authority
+
+**Where it appears in PIG:**
+- EPR (Epimorphic Prompt Regeneration)
+- Role reset logic
+- Blastema cluster formation
 - Regeneration budgets
-- Throttling
-- Graceful degradation
+
+> EPR is not optimization.
+> It is controlled re-specialization under constraint.
 
 ---
 
-### 6. Regeneration Over Perfection
-**Core insight:**  
-> Biology assumes damage. Engineering pretends it won’t happen.
+## 6. Self-Healing Materials
 
-**PIG Mapping:**
-- EPR
-- Checkpoint rollback
-- Regenerative execution
+### Hydrogel Self-Healing (Inspirational Analogy)
 
----
+**What it is (real-world):**
+Materials that repair structural damage via reversible bonding
+without external intervention.
 
-### The Immune Paradox (Critical Insight)
-> Controlled exposure builds strength.  
-> Zero exposure builds fragility.
+**What PIG takes from it:**
+- Repair should be local when possible
+- Healing should not introduce new structure
+- Reversibility matters
 
-**PIG Mapping:**
-- Chaos testing
-- Fault injection
-- Stress rehearsal
+**Where it appears in PIG:**
+- Bounded regeneration
+- Reversible recovery actions
+- Audit-first healing
 
 ---
 
-## Concept Group 6 — Tardigrades (Cryptobiotic Survival)
+## 7. Human Immune Systems (Primary Structural Model)
 
-### Key Capabilities
-- Cryptobiosis (reversible shutdown)
-- DNA protection (Dsup protein)
-- Vitrification (biological glass)
-- Survival across extreme conditions
+### The Immune System as a Control System
 
-**Core insight:**  
-> Prioritize continuity over activity.
+**Key insight:**
+The immune system is not a wall.
+It is a **living control system**.
 
-**PIG Mapping:**
-- TUNSYNC protocol
-- Dormant intelligence states
-- Integrity-first operation
-- Resume only when coherent
+**Core behaviors PIG adopts:**
 
-**Design Outcome:**  
-PIG prefers *pausing safely* over *operating incorrectly*.
+#### Innate Immunity (Fast, Deterministic)
+- Low latency
+- High false positives
+- No learning required
+
+Mapped to:
+- Fast Path execution
+- Deterministic throttles
+- Hard constraints
+
+#### Adaptive Immunity (Slow, Contextual)
+- Learns patterns
+- Builds memory
+- Improves over time
+
+Mapped to:
+- Trust score evolution
+- Historical weighting
+- Drift detection
+
+#### Tolerance (Critical)
+- Decides what NOT to attack
+- Prevents self-destruction
+
+Mapped to:
+- Abstention
+- Zero Evidence Protocol (ZEP)
+- Non-dominance rules
+
+#### Escalation Control
+- Budgeted response
+- Resolution after threat
+
+Mapped to:
+- Regeneration budgets
+- Degradation playbooks
+- Kill-switch logic
+
+> Autoimmune failure is treated as the most dangerous class of system failure.
 
 ---
 
-## One-Line Summary
+## 8. Cryptobiosis & Extreme Endurance
 
-Most systems optimize for performance.
+### Tardigrades (Structural Inspiration)
 
-PIG optimizes for **not collapsing**.
+**What they do (real-world):**
+- Pause metabolism
+- Preserve DNA integrity
+- Resume function after extreme conditions
+
+**What PIG takes from it:**
+- Reversible shutdown is superior to collapse
+- Integrity > activity
+- Dormancy is a valid state
+
+**Where it appears in PIG:**
+- ZEP (Zero Evidence Protocol)
+- Abstain states
+- Offline-safe operation
+
+> Silence is not failure.
+> Silence is survival.
 
 ---
 
-## Why These Inspirations Matter
+## What This Document Is Not
 
-These concepts share one property:
+- Not a claim of biological equivalence
+- Not a biomimicry manifesto
+- Not a philosophical essay
 
-They do not try to be invulnerable.  
-They try to be **recoverable**.
+This document exists to:
+- Clarify intellectual lineage
+- Prevent misinterpretation
+- Separate inspiration from implementation
 
-That is the design philosophy of PIG.
+---
+
+## Summary
+
+PIG is not inspired by any single domain.
+
+It is the result of **cross-domain synthesis** focused on one goal:
+
+> Design intelligence that survives reality, not ideal conditions.
+
+Each influence contributed a constraint.
+Each constraint removed a failure mode.
+
+That is the architecture.
