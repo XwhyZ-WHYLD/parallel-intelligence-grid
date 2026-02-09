@@ -66,3 +66,6 @@ Developed under **WHYLD**, a future systems research initiative of **XWHYz** (UA
 
 This repository is under active architectural refinement.  
 Code may follow later; architecture comes first.
+
+- **ARC** — Adaptive Resilience & Compensation (truth integrity under degradation)
+
