@@ -69,3 +69,25 @@ Code may follow later; architecture comes first.
 
 - **ARC** — Adaptive Resilience & Compensation (truth integrity under degradation)
 
+- ## Foundational Runtime Layer
+
+### PIG Reactor Mesh v1.0
+
+The PIG Reactor Mesh v1.0 operationalizes the full constraint stack of PIG into a unified runtime control plane.
+
+It integrates:
+
+- SPARC (Execution Governance)
+- ARC / SQI (Evidence-Bound Inference)
+- IMMU (Behavioral Immune Monitoring)
+- IMMUNE Core (Stability Regulation)
+- EPR (Regenerative Recovery)
+- TUNSYNC (Partition Tolerance)
+- RIL (Integrity-Bound Reinforcement)
+- ZEP (Epistemic Abstention)
+- PAL (Power-Aware Execution)
+
+The Reactor Mesh transforms PIG from modular doctrine into a constraint-governed distributed runtime architecture.
+
+See: `modules/REACTOR_MESH_v1.md`
+
