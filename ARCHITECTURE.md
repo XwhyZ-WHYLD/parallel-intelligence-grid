@@ -35,3 +35,13 @@ unsafe amplification, or confidence inflation.
 
 ARC enforces evidence-bound output, deterministic degradation behavior,
 and abstention when signal quality falls below enforceable thresholds.
+
+## Runtime Integration Layer
+
+PIG Reactor Mesh v1.0 unifies all constraint modules into a single runtime orchestration layer.
+
+It transforms:
+
+Modular Doctrine → Constraint-Governed Execution Environment
+
+See: modules/REACTOR_MESH_v1.md
